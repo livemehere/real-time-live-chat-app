@@ -19,21 +19,21 @@ function App() {
   ]);
 
   const [gameIcon, setGameIcon] = useState([
-    "/img/g1.svg",
-    "/img/g2.svg",
-    "/img/g3.svg",
-    "/img/g4.svg",
-    "/img/g5.svg",
-    "/img/g6.svg",
-    "/img/g7.svg",
-    "/img/g8.svg",
-    "/img/g9.svg",
-    "/img/g10.svg",
-    "/img/g11.svg",
-    "/img/g5.svg",
-    "/img/g6.svg",
-    "/img/g7.svg",
-    "/img/g8.svg",
+    "./img/g1.svg",
+    "./img/g2.svg",
+    "./img/g3.svg",
+    "./img/g4.svg",
+    "./img/g5.svg",
+    "./img/g6.svg",
+    "./img/g7.svg",
+    "./img/g8.svg",
+    "./img/g9.svg",
+    "./img/g10.svg",
+    "./img/g11.svg",
+    "./img/g5.svg",
+    "./img/g6.svg",
+    "./img/g7.svg",
+    "./img/g8.svg",
   ]);
 
   const [titles, setTitles] = useState([
@@ -72,10 +72,10 @@ function App() {
         </div>
         <div className="side-bar-right">
           <div className="part1">
-            <MenuBtn name="랜덤 참가" imgUrl={"/img/Vector-2.svg"} />
-            <MenuBtn name="방 만들기" imgUrl={"/img/Vector-3.svg"} />
-            <MenuBtn name="코드로 참가" imgUrl={"/img/Vector.svg"} />
-            <MenuBtn name="나가기" imgUrl={"/img/Vector-1.svg"} />
+            <MenuBtn name="랜덤 참가" imgUrl={"./img/Vector-2.svg"} />
+            <MenuBtn name="방 만들기" imgUrl={"./img/Vector-3.svg"} />
+            <MenuBtn name="코드로 참가" imgUrl={"./img/Vector.svg"} />
+            <MenuBtn name="나가기" imgUrl={"./img/Vector-1.svg"} />
           </div>
           <div className="part2">
             <div className="chat-box">
@@ -103,7 +103,7 @@ function App() {
               ))}
             </div>
             <div className="game-play">
-              <GamePlay ex={"/img/gameEx.svg"} />
+              <GamePlay ex={"./img/gameEx.svg"} />
               <div className="description">
                 <h3>술게임 옵션</h3>
                 <div className="more">
