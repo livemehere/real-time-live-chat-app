@@ -17,7 +17,7 @@ const UserCamera = ({zoomAvailable,setZoomFlag})=>{
     };
     return (
         <div className={isZoom ? 'user-camera zoomed' : 'user-camera'} onClick={togleZoom}>
-            <img src="/img/user.svg" alt="" />
+            <img src="./img/user.svg" alt="" />
         </div>
     );
 }
