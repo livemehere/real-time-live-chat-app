@@ -17,7 +17,6 @@ html {
 }
 
 .left-part {
-  background-color: #cbbcbc;
   display: flex;
 }
 .right-part {
@@ -27,7 +26,7 @@ html {
 }
 
 .side-bar {
-  background-color: #c9c7c7;
+  background-color: #1a1a1d;
   width: 72px;
   display: flex;
   flex-direction: column-reverse;
@@ -36,10 +35,13 @@ html {
 .side-btn {
   width: 44px;
   height: 44px;
-  background: #c0c0c0;
+  background: #282828;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
   margin: 10px 0;
+  color: white;
+  text-align: center;
+  line-height: 44px;
 }
 
 .side-btn:hover {
@@ -53,7 +55,7 @@ html {
 }
 .part1 {
   height: 200px;
-  background-color: #d3d3d3;
+  background-color: #616161;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -63,7 +65,7 @@ html {
 .menu-btn {
   width: 130px;
   height: 70px;
-  background-color: #c0c0c0;
+  background-color: #282828;
   border-radius: 12px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -71,6 +73,7 @@ html {
   transition: all 100ms ease-out;
   cursor: pointer;
   font-size: 20px;
+  color: white;
 }
 .menu-btn img {
   transform: scale(0.7);
@@ -84,15 +87,15 @@ html {
 
 .part2 {
   height: 100%;
-  background-color: #e2e2e2;
   display: flex;
   flex-direction: column;
+  background-color: #4e4e50;
   align-items: center;
 }
 .chat-box {
   flex: 12;
   width: 280px;
-  background: #c0c0c0;
+  background: #b1b1b145;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
   margin: 10px;
@@ -112,7 +115,7 @@ html {
 .msg-box {
   flex: 0.7;
   width: 280px;
-  background: #c0c0c0;
+  background: #b1b1b145;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
   margin-bottom: 20px;
@@ -134,11 +137,12 @@ html {
   background: inherit;
   border: none;
   outline: none;
+  color: white;
 }
 
 .part3 {
   height: 200px;
-  background-color: #dbdbdb;
+  background-color: #1d1d1d;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,13 +150,14 @@ html {
 .user-camera {
   width: 194px;
   height: 141px;
-  background: #c4c4c4;
+  background: #282828;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 27px;
   margin: 0 10px;
   /*나중엔 필요없으니 지우기 */
   text-align: center;
   line-height: 141px;
+  z-index: 1;
 }
 
 .user-camera:hover {
@@ -186,5 +191,64 @@ html {
 }
 .part4 {
   height: 100%;
-  background-color: #d0d0d0;
+  background-color: #1a1a1d;
+  position: relative;
+}
+
+.game-icon-box {
+  background-color: rgb(57, 57, 57);
+  width: 60px;
+  height: 60px;
+}
+.game-icon-box:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.game-icon-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-list {
+  display: flex;
+  justify-content: space-around;
+  background-color: #151618;
+}
+
+.game-play {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.game-play-ground {
+  display: flex;
+}
+.game-play-ground img {
+  width: 300px;
+}
+
+.description {
+  color: white;
+  width: 500px;
+  position: absolute;
+  bottom: 5%;
+}
+.description h3 {
+  background: rgb(118, 118, 118);
+  margin: 0;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.more {
+  width: 100%;
+  background: rgb(70, 70, 70);
 }
